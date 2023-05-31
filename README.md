@@ -42,7 +42,7 @@ When you get signed in, check `Preuzimanje eOI softverskog paketa` page for linu
     sudo chmod 777 $HOME/.pki/nssdb/pkcs11.txt
     ```
 
-2. Add  the named module `HR eID` to module database with PKCS #11 implementation libfile to NSS db
+2. Add  the named module `HR eID` to NSS module database with `PKCS #11` implementation libfile
     ```bash
     modutil -dbdir sql:$HOME/.pki/nssdb -add "HR eID" -libfile /usr/lib/akd/eidmiddleware/pkcs11/libEidPkcs11.so -mechanisms FRIENDLY -force 
     ```
