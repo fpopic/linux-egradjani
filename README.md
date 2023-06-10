@@ -37,13 +37,17 @@ When you get signed in, check `Preuzimanje eOI softverskog paketa` page for linu
     ```bash
     mkdir -p $HOME/.pki/nssdb
     sudo chmod 777 /etc/pam_pkcs11/nssdb
-    certutil -d $HOME/.pki/nssdb -N
+    certutil -d $HOME/.pki/nssdb -N --empty-password
     sudo chmod 777 $HOME/.pki/nssdb/pkcs11.txt
     ```
 
 2. Add `HR eID` certificate to NSS db
     ```bash
-    modutil -dbdir sql:$HOME/.pki/nssdb -add "HR eID" -libfile /usr/lib/akd/eidmiddleware/pkcs11/libEidPkcs11.so -mechanisms FRIENDLY -force 
+    modutil \
+      -dbdir sql:$HOME/.pki/nssdb \
+      -add "HR eID" -libfile /usr/lib/akd/eidmiddleware/pkcs11/libEidPkcs11.so \
+      -mechanisms FRIENDLY \
+      -force 
     ```
    Flag `-mechanisms FRIENDLY` is required to work on Chromium/Chrome,
    check [here](https://bugs.chromium.org/p/chromium/issues/detail?id=42073#c76) for details.
