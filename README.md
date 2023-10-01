@@ -17,14 +17,9 @@ Steps on how-to setup e-Građani app for identification (Chrome/Firefox) and sig
 
 ## e-Građani requirements
 
-In order to use your ID certificates, you have to activate your eOI, check [eid.hr](https://eid.hr/hr) for steps.
+To use your ID certificates, you must activate your eOI, and check [eid.hr](https://eid.hr/hr/eosobna/clanci/aktiviraj-eoi) for steps.
 
-Visit [eoi.akd.hr](https://eoi.akd.hr) and sign in with your eOI credentials (OIB/Password) you got from MUP RH when
-issuing your ID.
-
-When you get signed in, check `Preuzimanje eOI softverskog paketa` page for linux version of `eidmiddleware`.
-
-<p align="center"><img src="img/akd.png" alt="drawing" width="500" align="center" /></p>
+There you should find the latest linux `.deb` package. For the previous versions check [here](https://eid.hr/hr/eosobna/clanci/ranije-verzije-middlewara).
 
 ## Step-by-step
 
