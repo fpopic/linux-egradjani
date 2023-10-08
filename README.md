@@ -6,8 +6,8 @@ Steps on how-to setup e-Građani app for identification (Chrome/Firefox) and sig
 
 1. Install smart-card reader tooling
     ```bash
+    # if on Ubunt 22.04 LTS keep only `pcsc-tools` `opensc` packages and try without others
     sudo apt-get install -y libccid ccid pcsc-tools opensc
-    # if on Ubunt 22.04 LTS remove keep only pcsc-tools opensc packages and try without others
     ```
 
 2. Start the service
@@ -33,7 +33,7 @@ There you should find the latest linux `.deb` package. For the previous versions
     ```bash
     rm -rf $HOME/.pki/nssdb
     mkdir -p $HOME/.pki/nssdb
-    # # if on Ubunt 22.04 LTS skip this command
+    # if on Ubunt 22.04 LTS skip this command
     sudo chmod 777 /etc/pam_pkcs11/nssdb
     certutil -d $HOME/.pki/nssdb -N --empty-password
     sudo chmod 777 $HOME/.pki/nssdb/pkcs11.txt
