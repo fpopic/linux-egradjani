@@ -38,6 +38,8 @@ When you get signed in, check `Preuzimanje eOI softverskog paketa` page for linu
     ```bash
     rm -rf $HOME/.pki/nssdb
     mkdir -p $HOME/.pki/nssdb
+    # # if on Ubunt 22.04 LTS skip this command
+    sudo chmod 777 /etc/pam_pkcs11/nssdb
     certutil -d $HOME/.pki/nssdb -N
     sudo chmod 777 $HOME/.pki/nssdb/pkcs11.txt
     ```
