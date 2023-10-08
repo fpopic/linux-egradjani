@@ -95,4 +95,4 @@ For Debugging check [DEBUG.md](DEBUG.md)
 - https://www.eid.hr/hr
 - https://hr.comp.os.linux.narkive.com/7ObBGSco/eoi-na-ubuntu (Thanks!)
 - https://bugs.chromium.org/p/chromium/issues/detail?id=42073
-
+- https://www.suse.com/c/configuring-smart-card-authentication-suse-linux-enterprise/
