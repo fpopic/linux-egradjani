@@ -1,6 +1,6 @@
 # linux-egradjani
 
-Steps on how-to setup e-egradjani app for identification (Chrome/Firefox) and signing documents (LibreOffice) on Linux (Ubuntu 21.04.)
+Steps on how to set up the Croatian e-Građani app for identification (Chrome/Firefox) and signing documents (LibreOffice) on Linux (Ubuntu 21.04.)
 
 ## Linux requirements
 
