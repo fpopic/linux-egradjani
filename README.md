@@ -51,6 +51,8 @@ There you should find the latest linux `.deb` package. For the previous versions
    Flag `-mechanisms FRIENDLY` is required to work on Chromium/Chrome,
    check [here](https://bugs.chromium.org/p/chromium/issues/detail?id=42073#c76) for details.
 
+    Alternative path for newer versions seems to be ``/usr/lib/akd/certiliamiddleware/pkcs11/libEidPkcs11.so`` so try changing path if this is not working for you.
+
 3. Check whether `HR eID` is added to NSS db
     ```bash
     modutil -dbdir sql:$HOME/.pki/nssdb/ -list
